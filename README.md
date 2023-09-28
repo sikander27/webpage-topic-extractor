@@ -2,6 +2,10 @@
 
 The URL Topic Classifier is a Python script that extracts and classifies topics from a list of web URLs. It uses natural language processing (NLP) to analyze the content of the web pages and identify relevant topics. This README provides information on prerequisites, installation, and usage of the script.
 
+## Design Doc
+
+- **Part 2**: Refer to the design documentation to operationalize the collection of millions of URLs -> <a href="design.md">design.md </a>
+
 ## Prerequisites
 
 Before you can run the URL Topic Classifier, ensure that you have the following prerequisites installed on your system:
