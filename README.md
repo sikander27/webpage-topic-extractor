@@ -79,3 +79,8 @@ If you encounter any issues or errors while running the script, please check the
 
 - Ensure that you have installed all the required Python libraries mentioned in the `Prerequisites` section.
 - Verify that the URLs you provided in the sample_urls list are correct and accessible.
+
+
+## Design Doc
+
+- Refer to the Design doc <a href="design.md">here </a>

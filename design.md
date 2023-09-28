@@ -1,6 +1,6 @@
 # Design Documentation: Operationalizing URL Collection and Optimization
 
-<img alt="Coding" width="400" src="design.png" />
+<img alt="Coding" width="100%" src="design.png" />
 
 ## Overview
 
