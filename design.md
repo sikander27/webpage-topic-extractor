@@ -7,7 +7,11 @@
 The objective is to operationalize the collection of millions of URLs using the URL Topic Classifier code and optimize the system for reliability, performance, and scalability. This documentation outlines the key steps and considerations for achieving this goal.
 
 ## Current System Overview
-- **URL Topic Classifier**: The existing Python script (main.py) can analyze a list of web URLs, extract text content, identify topics, and store the results in a CSV file. It uses libraries such as requests, BeautifulSoup, stanza, nltk, and csv.
+- **URL Topic Classifier**: The existing Python script (main.py) can analyze a list of web URLs, extract text content/meta content, identify topics, and store the results in a CSV file. It uses libraries such as requests, BeautifulSoup, stanza, nltk, and csv.
+    
+    *There are 2 key source of topics extraction/classification*
+    1. The page content 
+    2. The meta tags like `keywords, title, description`
 
 ## Steps for Operationalization
 1. **Infrastructure Scaling**
