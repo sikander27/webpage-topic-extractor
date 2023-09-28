@@ -59,7 +59,7 @@ class URLTopicClassifier:
             soup = BeautifulSoup(response.text, "html.parser")
             text = " ".join(soup.stripped_strings)
 
-            # TODO: Handle anti-scrapping mechanisms like captcha
+            # TODO: Handle anti-scrapping mechanisms like captcha for websites like Amazon.
             return text
         except requests.exceptions.RequestException as e:
             print(f"Error fetching content from {url}: {str(e)}")
@@ -148,11 +148,13 @@ class URLTopicClassifier:
 # Testing the URLTopicClassifier class
 if __name__ == "__main__":
     sample_urls = [
+        "http://www.amazon.com/Cuisinart-CPT-122-Compact-2-Slice-Toaster/dp/B009GQ034C/ref=sr_1_1?s=kitchen&ie=UTF8&qid=1431620315&sr=1-1&keywords=toaster",
         "http://blog.rei.com/camp/how-to-introduce-your-indoorsy-friend-to-the-outdoors/",
         "http://www.cnn.com/2013/06/10/politics/edward-snowden-profile/",
     ]
     url_extractor = URLTopicClassifier(sample_urls)
     url_extractor.extract_topics()
+    # If you need data in csv format
     url_extractor.create_csv()
     for row in url_extractor.data:
         print("-------------------------------------------------------")
